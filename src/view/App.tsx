@@ -1,8 +1,7 @@
+import Counter from "@/view/Counter";
+import Stopwatch from "@/view/Stopwatch";
+import StyledTab from "@/view/StyledTab";
 import { Tab } from "@headlessui/react";
-
-import Counter from "./Counter";
-import Stopwatch from "./Stopwatch";
-import StyledTab from "./StyledTab";
 
 function App() {
   return (

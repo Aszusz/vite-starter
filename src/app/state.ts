@@ -1,5 +1,5 @@
-import * as Counter from "@model/counter";
-import * as Stopwatch from "@model/stopwatch";
+import * as Counter from "@/model/counter";
+import * as Stopwatch from "@/model/stopwatch";
 
 export type State = {
   counter: Counter.Counter

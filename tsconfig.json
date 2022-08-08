@@ -16,14 +16,9 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "noImplicitAny": true,
-    "baseUrl": "./src",
+    "baseUrl": "./",
     "paths": {
-      "@api/*": ["api/*"],
-      "@app/*": ["app/*"],
-      "@assets/*": ["assets/*"],
-      "@model/*": ["model/*"],
-      "@utils/*": ["utils/*"],
-      "@view/*": ["view/*"]
+      "@/*": ["src/*"]
     }
   },
   "include": ["src"],

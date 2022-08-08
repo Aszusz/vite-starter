@@ -1,9 +1,8 @@
 import tw from "tw-tailwind";
 
-import { useAppDispatch, useAppSelector } from "@app/hooks";
-import { selectCount } from "@app/selectors";
-
-import { uiEventCreators } from "./uiEvents";
+import { useAppDispatch, useAppSelector } from "@/app/hooks";
+import { selectCount } from "@/app/selectors";
+import { uiEventCreators } from "@/view//ui-events";
 
 const Counter = () => {
   const containerStyle = tw`p-4 rounded-lg bg-slate-700 w-fit`

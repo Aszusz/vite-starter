@@ -1,9 +1,8 @@
-import { FxEvents, fxEventTypes } from "@api/fxEvents";
-import * as Counter from "@model/counter";
-import * as Stopwatch from "@model/stopwatch";
-import { UiEvents, uiEventTypes } from "@view/uiEvents";
-
-import { initialState, State } from "./state";
+import { FxEvents, fxEventTypes } from "@/api/fx-events";
+import { initialState, State } from "@/app/state";
+import * as Counter from "@/model/counter";
+import * as Stopwatch from "@/model/stopwatch";
+import { UiEvents, uiEventTypes } from "@/view/ui-events";
 
 function reducer(
   state: State = initialState,

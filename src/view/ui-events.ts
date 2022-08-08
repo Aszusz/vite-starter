@@ -4,7 +4,7 @@ import {
   EventTypes,
   makeEventCreators,
   makeEventTypes
-} from "@utils/redux-events";
+} from "@/utils/redux-events";
 
 export const uiEvents = {
   ['APP_STARTED']: createEvent(),

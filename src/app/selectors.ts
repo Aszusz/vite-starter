@@ -1,6 +1,5 @@
-import { elapsedSeconds } from "@model/stopwatch";
-
-import { State } from "./state";
+import { State } from "@/app/state";
+import { elapsedSeconds } from "@/model/stopwatch";
 
 export const selectElapsedSecons = (state: State) =>
   elapsedSeconds(state.stopwatch)

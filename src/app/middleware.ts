@@ -1,10 +1,10 @@
 import { Dispatch, MiddlewareAPI } from "redux";
 
-import { fxEventCreators, FxEvents } from "@api/fxEvents";
-import { delay, getCurrentTime } from "@api/time";
-import { UiEvents, uiEventTypes } from "@view/uiEvents";
+import { fxEventCreators, FxEvents } from "@/api/fx-events";
+import { delay, getCurrentTime } from "@/api/time";
+import { UiEvents, uiEventTypes } from "@/view/ui-events";
 
-export const customMiddleWare =
+export const customMiddleware =
   (store: MiddlewareAPI<Dispatch<UiEvents | FxEvents>>) =>
   (next: Dispatch<UiEvents | FxEvents>) =>
   async (event: UiEvents): Promise<UiEvents> => {
