@@ -1,5 +1,5 @@
-import { useAppSelector } from "@/app/hooks";
-import { selectElapsedSecons } from "@/app/selectors";
+import { useAppSelector } from '@/app/hooks'
+import { selectElapsedSecons } from '@/app/selectors'
 
 const Stopwatch: React.FunctionComponent = () => {
   const seconds = useAppSelector(selectElapsedSecons)

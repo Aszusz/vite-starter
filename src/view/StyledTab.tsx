@@ -1,7 +1,7 @@
-import clsx from "clsx";
-import tw from "tw-tailwind";
+import clsx from 'clsx'
+import tw from 'tw-tailwind'
 
-import { Tab } from "@headlessui/react";
+import { Tab } from '@headlessui/react'
 
 export interface IProps {
   children: React.ReactNode

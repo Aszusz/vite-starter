@@ -1,15 +1,15 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
 
-export function createEvent(shown = true) {
+export function eventDefinition() {
   return (type: string) => () => {
-    return { type: type, shown: shown }
+    return { type: type }
   }
 }
 
-export function createPayloadEvent<T>(shown = true) {
+export function payloadEventDefinition<T>() {
   return (type: string) => (payload: T) => {
-    return { type: type, payload: payload, shown: shown }
+    return { type: type, payload: payload }
   }
 }
 

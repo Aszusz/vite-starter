@@ -1,15 +1,15 @@
 import {
-  createPayloadEvent,
+  payloadEventDefinition,
   EventTypes,
   makeEventCreators,
-  makeEventTypes
-} from "@/utils/redux-events";
+  makeEventTypes,
+} from '@/utils/redux-events'
 
 export const fxEvents = {
-  ['APP_STARTED_DETAILS']: createPayloadEvent<Date>(),
-  ['GOT_TIME']: createPayloadEvent<Date>(),
-  ['LARGE_INCREMENT_WAIT_COMPLETED']: createPayloadEvent<number>(),
-  ['LARGE_DECREMENT_WAIT_COMPLETED']: createPayloadEvent<number>(),
+  ['APP_STARTED_DETAILS']: payloadEventDefinition<Date>(),
+  ['_GOT_TIME']: payloadEventDefinition<Date>(),
+  ['LARGE_INCREMENT_WAIT_COMPLETED']: payloadEventDefinition<number>(),
+  ['LARGE_DECREMENT_WAIT_COMPLETED']: payloadEventDefinition<number>(),
 }
 
 export const fxEventCreators = makeEventCreators(fxEvents)
