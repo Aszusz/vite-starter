@@ -3,6 +3,7 @@ import { Dispatch, MiddlewareAPI } from 'redux'
 import { fxEventCreators } from '@/api/fx-events'
 import { delay, getCurrentTime } from '@/api/time'
 import { Events, eventTypes } from '@/app/events'
+import { randomInteger } from '@/api/rnd'
 
 export const effects =
   (store: MiddlewareAPI<Dispatch<Events>>) =>
@@ -20,15 +21,17 @@ export const effects =
         return result
       }
 
-      case eventTypes['LARGE_DECREMENT_BUTTON_CLICKED']: {
-        await delay(1000)
-        store.dispatch(fxEventCreators.LARGE_DECREMENT_WAIT_COMPLETED(3))
+      case eventTypes['MINUS_RND_BUTTON_CLICKED']: {
+        const rnd = randomInteger(1, 10)
+        await delay(rnd * 200)
+        store.dispatch(fxEventCreators.MINUS_RND_WAIT_DONE(rnd))
         return result
       }
 
-      case eventTypes['LARGE_INCREMENT_BUTTON_CLICKED']: {
-        await delay(1000)
-        store.dispatch(fxEventCreators.LARGE_INCREMENT_WAIT_COMPLETED(3))
+      case eventTypes['PLUS_RND_BUTTON_CLICKED']: {
+        const rnd = randomInteger(1, 10)
+        await delay(rnd * 200)
+        store.dispatch(fxEventCreators.PLUS_RND_WAIT_DONE(rnd))
         return result
       }
 

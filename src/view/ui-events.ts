@@ -1,6 +1,5 @@
 import {
   eventDefinition,
-  payloadEventDefinition,
   EventTypes,
   makeEventCreators,
   makeEventTypes,
@@ -8,10 +7,10 @@ import {
 
 export const uiEvents = {
   ['APP_STARTED']: eventDefinition(),
-  ['SMALL_INCREMENT_BUTTON_CLICKED']: eventDefinition(),
-  ['LARGE_INCREMENT_BUTTON_CLICKED']: payloadEventDefinition<number>(),
-  ['LARGE_DECREMENT_BUTTON_CLICKED']: payloadEventDefinition<number>(),
-  ['SMALL_DECREMENT_BUTTON_CLICKED']: eventDefinition(),
+  ['PLUS_ONE_BUTTON_CLICKED']: eventDefinition(),
+  ['PLUS_RND_BUTTON_CLICKED']: eventDefinition(),
+  ['MINUS_RND_BUTTON_CLICKED']: eventDefinition(),
+  ['MINUS_ONE_BUTTON_CLICKED']: eventDefinition(),
 }
 
 export const uiEventCreators = makeEventCreators(uiEvents)

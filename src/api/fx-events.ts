@@ -8,8 +8,8 @@ import {
 export const fxEvents = {
   ['APP_STARTED_DETAILS']: payloadEventDefinition<Date>(),
   ['_GOT_TIME']: payloadEventDefinition<Date>(),
-  ['LARGE_INCREMENT_WAIT_COMPLETED']: payloadEventDefinition<number>(),
-  ['LARGE_DECREMENT_WAIT_COMPLETED']: payloadEventDefinition<number>(),
+  ['PLUS_RND_WAIT_DONE']: payloadEventDefinition<number>(),
+  ['MINUS_RND_WAIT_DONE']: payloadEventDefinition<number>(),
 }
 
 export const fxEventCreators = makeEventCreators(fxEvents)

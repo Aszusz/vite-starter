@@ -15,25 +15,25 @@ function update(state: State = initialState, event: Events): State {
       return { ...state, stopwatch: next }
     }
 
-    case eventTypes['LARGE_DECREMENT_WAIT_COMPLETED']: {
+    case eventTypes['MINUS_RND_WAIT_DONE']: {
       const prev = state.counter
       const next = Counter.decrement(event.payload, prev)
       return { ...state, counter: next }
     }
 
-    case eventTypes['SMALL_INCREMENT_BUTTON_CLICKED']: {
+    case eventTypes['PLUS_ONE_BUTTON_CLICKED']: {
       const prev = state.counter
       const next = Counter.increment(1, prev)
       return { ...state, counter: next }
     }
 
-    case eventTypes['SMALL_DECREMENT_BUTTON_CLICKED']: {
+    case eventTypes['MINUS_ONE_BUTTON_CLICKED']: {
       const prev = state.counter
       const next = Counter.decrement(1, prev)
       return { ...state, counter: next }
     }
 
-    case eventTypes['LARGE_INCREMENT_WAIT_COMPLETED']: {
+    case eventTypes['PLUS_RND_WAIT_DONE']: {
       const prev = state.counter
       const next = Counter.increment(event.payload, prev)
       return { ...state, counter: next }

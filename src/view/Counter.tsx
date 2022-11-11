@@ -16,18 +16,14 @@ const Counter = () => {
     <div className={containerStyle}>
       <button
         className={buttonStyle}
-        onClick={() =>
-          dispatch(uiEventCreators.LARGE_DECREMENT_BUTTON_CLICKED(3))
-        }
+        onClick={() => dispatch(uiEventCreators.MINUS_RND_BUTTON_CLICKED())}
       >
         --
       </button>
 
       <button
         className={buttonStyle}
-        onClick={() =>
-          dispatch(uiEventCreators.SMALL_DECREMENT_BUTTON_CLICKED())
-        }
+        onClick={() => dispatch(uiEventCreators.MINUS_ONE_BUTTON_CLICKED())}
       >
         -
       </button>
@@ -36,18 +32,14 @@ const Counter = () => {
 
       <button
         className={buttonStyle}
-        onClick={() =>
-          dispatch(uiEventCreators.SMALL_INCREMENT_BUTTON_CLICKED())
-        }
+        onClick={() => dispatch(uiEventCreators.PLUS_ONE_BUTTON_CLICKED())}
       >
         +
       </button>
 
       <button
         className={buttonStyle}
-        onClick={() =>
-          dispatch(uiEventCreators.LARGE_INCREMENT_BUTTON_CLICKED(3))
-        }
+        onClick={() => dispatch(uiEventCreators.PLUS_RND_BUTTON_CLICKED())}
       >
         ++
       </button>
